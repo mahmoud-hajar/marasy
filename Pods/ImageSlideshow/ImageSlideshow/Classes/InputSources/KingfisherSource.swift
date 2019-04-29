@@ -46,9 +46,20 @@ public class KingfisherSource: NSObject, InputSource {
     }
 
     @objc public func load(to imageView: UIImageView, with callback: @escaping (UIImage?) -> Void) {
-        imageView.kf.setImage(with: self.url, placeholder: self.placeholder, options: self.options, progressBlock: nil) { (image, _, _, _) in
-            callback(image)
+        
+        
+        imageView.kf.setImage(with: url) { result in
+            switch result {
+            case .success(let value):
+                callback(value.image)
+                print("Image: \(value.image). Got from: \(value.cacheType)")
+            case .failure(let error):
+                print("Error: \(error)")
+            }
         }
+        
+        
+
     }
     
     public func cancelLoad(on imageView: UIImageView) {

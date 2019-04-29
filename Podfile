@@ -7,7 +7,7 @@ target 'Marasy-Elhoom' do
 
   # Pods for Marasy-Elhoom
 
-    pod 'ImageSlideshow', '~> 1.6'
+    pod 'ImageSlideshow', '~> 1.4'
     pod 'SwiftyJSON'
     pod 'Kingfisher', '~> 5.0'
     pod 'Alamofire'

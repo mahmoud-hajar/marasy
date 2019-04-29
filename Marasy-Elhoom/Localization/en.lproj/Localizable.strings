@@ -5,3 +5,37 @@
   Created by mahmoudhajar on 4/24/19.
   Copyright © 2019 CreativeShare. All rights reserved.
 */
+
+
+"LanguageID" = "2";
+
+"arabic"="arabic";
+
+
+
+"phone"="Mobile number";
+"password"="Password";
+"sginIn"="Sign In";
+"sginUp"="Sign Up";
+"skip"="Skip";
+"error"="Error!!";
+"fill"="all fields are required,please fill all fields";
+"name"="Name";
+"sginUp"="Sgin UP";
+"noFound"="phone number not exist";
+"wro"="Wrong password";
+"OK"="OK";
+"found"="this number already exist";
+"rs"="Rs";
+"chkInter"="Please check your internet connetion";
+"email"="Email";
+"leave"="Leave a message";
+"send"="Send";
+"contact"="Contant US";
+"logout"="Logout";
+"home"="Home";
+"myOrder"="My orders";
+"offers"="Offers";
+"profile"="Profile";
+"more"="More";
+"update"="Update";

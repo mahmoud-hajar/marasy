@@ -16,7 +16,7 @@ class Helper: NSObject {
         guard let window = UIApplication.shared.keyWindow else {return}
         let sb = UIStoryboard(name: "Main", bundle: nil)
         var vc: UIViewController
-        if checkToken() == false {
+        if checkUserId() == false {
             vc = sb.instantiateInitialViewController()!
         } else {
             vc = sb.instantiateViewController(withIdentifier: "main")
@@ -26,32 +26,30 @@ class Helper: NSObject {
         
     }
     
-    class func saveUserToken(token: String) {
+    class func saveUserId(user_id: Int) {
       let def = UserDefaults.standard
-        def.setValue(token, forKey: "token")
+        def.setValue(user_id, forKey: "user_id")
           def.synchronize()
         restartApp()
     }
     
-    class func checkToken()->Bool {
+    class func checkUserId()->Bool {
         let def = UserDefaults.standard
-        return (def.object(forKey: "token") as? String) != nil
+        return (def.object(forKey: "user_id") as? Int) != nil
         
     }
     
-    class func getUserToken() -> String {
+    class func getUserId() -> Int {
         let def = UserDefaults.standard
-        return (def.object(forKey: "token") as! String)
+        return (def.object(forKey: "user_id") as! Int)
     }
     
-    class func setUserData(id:Int,email:String,name:String,phone:String,photo:String){
+    class func setUserData(name:String,phone:String,password:String){
         
         let def = UserDefaults.standard
-        def.setValue(id, forKey: "id")
-        def.setValue(email, forKey: "email")
         def.setValue(name, forKey: "name")
         def.setValue(phone, forKey: "phone")
-        def.setValue(photo, forKey: "photo")
+        def.setValue(password, forKey: "password")
         def.synchronize()
         restartApp()
     }
@@ -59,11 +57,10 @@ class Helper: NSObject {
     class func deletUserDefaults() {
         
         let def = UserDefaults.standard
-        def.removeObject(forKey: "email")
         def.removeObject(forKey: "name")
-        def.removeObject(forKey: "photo")
-        def.removeObject(forKey: "id")
-        def.removeObject(forKey: "token")
+        def.removeObject(forKey: "password")
+        def.removeObject(forKey: "user_id")
+        def.removeObject(forKey: "phone")
         UserDefaults.standard.synchronize()
         
         restartApp()
@@ -100,5 +97,31 @@ class Helper: NSObject {
         SVProgressHUD.setFont(UIFont.systemFont(ofSize: 20.0))
         SVProgressHUD.dismiss(withDelay: 2.5)
     }
+ 
+    
+    //MARK:- SET states bar backgroundColor
+    class func statusBar(colr: UIColor ) {
+        
+        guard let statusBarView = UIApplication.shared.value(forKeyPath: "statusBarWindow.statusBar") as? UIView else {return}
+        statusBarView.backgroundColor = colr
+
+    }
+    
+    //Mark:- background Image for navigation
+    class func setBackgroundIamgeForNavigation(img:UIImage, vc:UIViewController) {
+  vc.navigationController?.navigationBar.setBackgroundImage(img.resizableImage(withCapInsets: UIEdgeInsets.zero, resizingMode: .stretch), for: .default)
+
+    }
+    
+    //Mark:- convert to JSON
+    class func toJSON(object:Any)->String {
+     if let json = try? JSONSerialization.data(withJSONObject: object, options: []) {
+            return  String(data: json, encoding: String.Encoding.utf8)!
+            }
+            return ""
+    }
+    
+    
+    
     
 }
