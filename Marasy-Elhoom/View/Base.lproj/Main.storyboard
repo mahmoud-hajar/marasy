@@ -15,14 +15,14 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="LoginVC" customModule="Marasy_Elhoom" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="nC4-Rf-S4c">
-                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="6AF-iN-YHj">
-                                <rect key="frame" x="13" y="353.5" width="349" height="100"/>
+                                <rect key="frame" x="13" y="297" width="349" height="100"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Va-7Z-LsN" customClass="SpringView" customModule="Marasy_Elhoom" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="349" height="46"/>
@@ -105,7 +105,7 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N9D-UP-W9s" customClass="SpringButton" customModule="Marasy_Elhoom" customModuleProvider="target">
-                                <rect key="frame" x="87.5" y="473.5" width="200" height="44"/>
+                                <rect key="frame" x="87.5" y="417" width="200" height="44"/>
                                 <color key="backgroundColor" red="0.78823529410000004" green="0.1450980392" blue="0.17254901959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="X3e-3y-b5N"/>
@@ -130,7 +130,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zod-Ff-aqL">
-                                <rect key="frame" x="320" y="565" width="35" height="33"/>
+                                <rect key="frame" x="320" y="501" width="35" height="33"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
                                 <state key="normal" title="Skip">
                                     <color key="titleColor" red="0.78823529410000004" green="0.1450980392" blue="0.17254901959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -140,7 +140,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uCJ-w3-AEn">
-                                <rect key="frame" x="20" y="565" width="64" height="33"/>
+                                <rect key="frame" x="20" y="501" width="64" height="33"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
                                 <state key="normal" title="Sgin UP">
                                     <color key="titleColor" red="0.78823529410000004" green="0.1450980392" blue="0.17254901959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -150,7 +150,7 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-white" translatesAutoresizingMaskIntoConstraints="NO" id="NFy-VR-Nig">
-                                <rect key="frame" x="112.5" y="79" width="150" height="150"/>
+                                <rect key="frame" x="112.5" y="5" width="150" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="VZp-OB-IOO"/>
                                     <constraint firstAttribute="width" secondItem="NFy-VR-Nig" secondAttribute="height" multiplier="1:1" id="epr-Ci-G4R"/>
@@ -165,7 +165,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="uCJ-w3-AEn" secondAttribute="trailing" constant="291" id="9DV-Dh-art"/>
                             <constraint firstItem="nC4-Rf-S4c" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="LBB-z1-RqW"/>
                             <constraint firstItem="nC4-Rf-S4c" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="QcP-3M-JSu"/>
-                            <constraint firstItem="NFy-VR-Nig" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="S5F-CG-JIZ"/>
+                            <constraint firstItem="NFy-VR-Nig" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="5" id="S5F-CG-JIZ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Zod-Ff-aqL" secondAttribute="trailing" constant="20" id="SCH-bj-2Lg"/>
                             <constraint firstItem="6AF-iN-YHj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SEV-fq-gak"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="uCJ-w3-AEn" secondAttribute="bottom" constant="20" id="SIX-5e-DLq"/>
@@ -200,21 +200,21 @@
             <objects>
                 <viewController id="XaA-eX-grS" customClass="SginUpVC" customModule="Marasy_Elhoom" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="m0J-kW-CL1">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="l1u-5J-nsz">
-                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-white" translatesAutoresizingMaskIntoConstraints="NO" id="Pp0-dV-aJu">
-                                <rect key="frame" x="112.5" y="82" width="150" height="150"/>
+                                <rect key="frame" x="112.5" y="5" width="150" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Pp0-dV-aJu" secondAttribute="height" multiplier="1:1" id="N60-cR-x2r"/>
                                     <constraint firstAttribute="height" constant="150" id="fPY-Tg-8WZ"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M3j-8d-uPW" customClass="SpringButton" customModule="Marasy_Elhoom" customModuleProvider="target">
-                                <rect key="frame" x="87.5" y="508.5" width="200" height="44"/>
+                                <rect key="frame" x="87.5" y="452" width="200" height="44"/>
                                 <color key="backgroundColor" red="0.78823529410000004" green="0.1450980392" blue="0.17254901959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="Aic-13-QvH"/>
@@ -239,7 +239,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="5mx-yS-h1H">
-                                <rect key="frame" x="13" y="338.5" width="349" height="150"/>
+                                <rect key="frame" x="13" y="282" width="349" height="150"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0ko-ma-oes" customClass="SpringView" customModule="Marasy_Elhoom" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="349" height="44.5"/>
@@ -367,7 +367,7 @@
                             <constraint firstItem="l1u-5J-nsz" firstAttribute="top" secondItem="j8n-6o-RFq" secondAttribute="top" id="WrZ-W9-S0g"/>
                             <constraint firstItem="M3j-8d-uPW" firstAttribute="top" secondItem="5mx-yS-h1H" secondAttribute="bottom" constant="20" id="a8E-eM-QJe"/>
                             <constraint firstItem="l1u-5J-nsz" firstAttribute="bottom" secondItem="j8n-6o-RFq" secondAttribute="bottom" id="dlI-7y-yKi"/>
-                            <constraint firstItem="Pp0-dV-aJu" firstAttribute="top" secondItem="j8n-6o-RFq" secondAttribute="top" constant="18" id="gfX-qz-NNc"/>
+                            <constraint firstItem="Pp0-dV-aJu" firstAttribute="top" secondItem="j8n-6o-RFq" secondAttribute="top" constant="5" id="gfX-qz-NNc"/>
                             <constraint firstItem="l1u-5J-nsz" firstAttribute="trailing" secondItem="j8n-6o-RFq" secondAttribute="trailing" id="iAT-C9-reJ"/>
                             <constraint firstItem="5mx-yS-h1H" firstAttribute="leading" secondItem="j8n-6o-RFq" secondAttribute="leading" constant="13" id="lJO-q0-b5a"/>
                             <constraint firstItem="Pp0-dV-aJu" firstAttribute="centerX" secondItem="m0J-kW-CL1" secondAttribute="centerX" id="qlb-3z-oMN"/>
@@ -394,7 +394,7 @@
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="Ad9-rM-fa8" customClass="ListVC" customModule="Marasy_Elhoom" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="euF-S2-6dG">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ol1-CQ-PFO">
@@ -474,7 +474,7 @@
             <objects>
                 <viewController id="i95-rL-RU0" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FxT-Sy-hP9">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="grk-gv-zns"/>
@@ -489,7 +489,7 @@
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="31Z-ai-jhF" customClass="MyOrderVC" customModule="Marasy_Elhoom" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FO3-FE-cWI">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="OtS-DG-ky3">
@@ -626,7 +626,7 @@
             <objects>
                 <viewController id="BjN-pI-Vni" customClass="MainVC" customModule="Marasy_Elhoom" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BbV-Jz-Lii">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1qs-Qe-mty" customClass="ImageSlideshow" customModule="ImageSlideshow">
@@ -712,7 +712,7 @@
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="geM-5e-G4D" customClass="ProductsVC" customModule="Marasy_Elhoom" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FyW-kO-znZ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="K1P-qB-RPd">
@@ -821,7 +821,7 @@
         <scene sceneID="1w2-aU-2Ag">
             <objects>
                 <tabBarController storyboardIdentifier="main" id="40D-mn-1Va" customClass="TabBarController" customModule="Marasy_Elhoom" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ihb-4a-90G">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="Ihb-4a-90G">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.78823529410000004" green="0.1450980392" blue="0.17254901959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -844,7 +844,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="KqF-kT-m4i" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="So6-Er-tF9">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="So6-Er-tF9">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -904,7 +904,7 @@
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="bMK-vb-49f" customClass="OffersVC" customModule="Marasy_Elhoom" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="edp-nn-WZY">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UNd-X8-2Jn">
@@ -1015,7 +1015,7 @@
             <objects>
                 <viewController id="MAx-jm-63y" customClass="ProfileVC" customModule="Marasy_Elhoom" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bDu-ox-dRT">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User name" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZOU-eK-NKw" customClass="SpringLabel" customModule="Marasy_Elhoom" customModuleProvider="target">
@@ -1234,7 +1234,7 @@
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="0NA-SY-WKg" customClass="RulesVC" customModule="Marasy_Elhoom" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Yx2-rA-OAe">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Rules of marasi elhoom" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="yQJ-NM-hoi">
@@ -1266,7 +1266,7 @@
             <objects>
                 <viewController id="9b9-x4-0RX" customClass="ContactUSVC" customModule="Marasy_Elhoom" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1WK-TY-Kip">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sRj-QH-RlJ" customClass="SpringTextField" customModule="Marasy_Elhoom" customModuleProvider="target">
@@ -1442,7 +1442,7 @@
             <objects>
                 <viewController id="kQO-Bg-ApY" customClass="ContentVC" customModule="Marasy_Elhoom" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="p5i-kc-eir">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JcO-9h-yKh">

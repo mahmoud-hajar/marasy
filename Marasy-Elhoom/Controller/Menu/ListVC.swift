@@ -71,7 +71,7 @@ extension ListVC: UITableViewDelegate, UITableViewDataSource {
         cell.selectionStyle = UITableViewCell.SelectionStyle.none
         
         if indexPath.row == 0 {
-            cell.titleLab.text = General.stringForKey(key: "")
+            cell.titleLab.text = General.stringForKey(key: "sginIn")
 
         } else if indexPath.row == 1 {
             cell.titleLab.text = General.stringForKey(key: "")

@@ -90,7 +90,8 @@ class LoginVC: UIViewController {
     fileprivate func setDes() {
         
     Helper.setBackgroundIamgeForNavigation(img: UIImage(named: "Bitmap")!, vc: self)
-        
+        self.hideNavigationShadow(viwController: self)
+
         self.phView.setRoundCorners(radius: 12.0)
          self.pasView.setRoundCorners(radius: 12.0)
         

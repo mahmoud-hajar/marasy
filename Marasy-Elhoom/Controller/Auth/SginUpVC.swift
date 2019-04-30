@@ -82,7 +82,8 @@ class SginUpVC: UIViewController {
           self.passwordTF.placeholder = General.stringForKey(key: "password")
         
         self.sginUp.setTitle(General.stringForKey(key: "sginUp"), for: .normal)
-        
+        self.hideNavigationShadow(viwController: self)
+
         
     }
     

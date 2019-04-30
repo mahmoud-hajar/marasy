@@ -112,6 +112,7 @@ class ProfileVC: UIViewController {
     Helper.setBackgroundIamgeForNavigation(img: UIImage(named: "header")!, vc: self)
       send.setRaudis(raduis: 12.0)
         send.setRaudis(raduis: 12.0)
+        self.hideNavigationShadow(viwController: self)
 
     
     }
