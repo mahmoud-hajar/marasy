@@ -35,7 +35,8 @@ class MainVC: UIViewController {
 
         
         self.confirmPrortcol()
-         Helper.setBackgroundIamgeForNavigation(img: UIImage(named: "header")!, vc: self)
+        self.hideNavigationShadow(viwController: self)
+        Helper.setBackgroundIamgeForNavigation(img: UIImage(named: "header")!, vc: self)
 
         if API.isConnectedToInternet() {
             DispatchQueue.main.async {
@@ -110,6 +111,7 @@ class MainVC: UIViewController {
         
         API.mainCategory(pageNO: pag) { (error:Error?, data:[MainPro]?) in
             if data !=  nil {
+                self.categ.removeAll()
                self.categ.append(contentsOf: data!)
                  self.collectionView.reloadData()
                 print(data!)

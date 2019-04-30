@@ -65,6 +65,7 @@ class ContactUSVC: UIViewController {
     
     fileprivate func setDes() {
         
+        self.hideNavigationShadow(viwController: self)
         Helper.setBackgroundIamgeForNavigation(img: UIImage(named: "header")!, vc: self)
         msgTV.setRoundCorners(15.0)
         send.setRaudis(raduis: 12.0)

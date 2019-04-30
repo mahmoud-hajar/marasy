@@ -64,6 +64,8 @@ class ContentVC: UIViewController {
     
     fileprivate func setDes() {
         
+        self.hideNavigationShadow(viwController: self)
+        Helper.setBackgroundIamgeForNavigation(img: UIImage(named: "header")!, vc: self)
         self.imgView.floatView()
         self.contentView.setRoundCorners(radius: 12.0)
         

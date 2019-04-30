@@ -18,6 +18,9 @@ class MyOrderVC: UIViewController {
     
     
     
+    var selectedArray = [MyOrder]()
+    
+    
     
     var selectedIndex = 0
     var selectedIndexPath = IndexPath(item: 0, section: 0)
@@ -29,27 +32,67 @@ class MyOrderVC: UIViewController {
     
     
     
+    var menuTitles:[String] = [ General.stringForKey(key: ""),
+                                 General.stringForKey(key: ""),   General.stringForKey(key: "")
+                              ]
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         
         
-     //   Helper.hudStart()
-
-     self.hideNavigationShadow(viwController: self)
-        
+        Helper.hudStart()
+           setDesi()
+        setProtocls()
         
         collectionView.selectItem(at: selectedIndexPath, animated: false, scrollPosition: .centeredVertically)
         
+        if API.isConnectedToInternet() {
+            
+            if Helper.checkUserId() == true {
+                self.collectionView.isUserInteractionEnabled = true
+                DispatchQueue.main.async {
+                    
+                    
+                    
+                }
+                createSwipGestures()
+            } else {
+                SVProgressHUD.dismiss()
+                self.HeightConstant.constant = 0
+                collectionView.layoutIfNeeded()
+               Alert.alertPopUp(title: General.stringForKey(key: "error"), msg: General.stringForKey(key:"notAv"), vc: self)
+            }
+            
+            
+        } else {
+            SVProgressHUD.dismiss()
+            Alert.alertPopUp(title: General.stringForKey(key: "error"), msg: General.stringForKey(key: "chkInter"), vc: self)
+            print("device not connected to internet")
+        }
         
         
         
 
     }
     
+    
+    
+    fileprivate func setProtocls() {
+        
+       self.collectionView.delegate = self
+         self.collectionView.dataSource = self
+          self.tableView.dataSource = self
+           self.tableView.delegate = self
+            self.tableView.tableFooterView = UIView()
+            self.tableView.tableFooterView?.tintColor = UIColor.clear
+    }
 
     
-    func refreshContent() {
+    fileprivate func refreshContent() {
         
         if selectedIndex == 0 {
 
@@ -94,7 +137,12 @@ class MyOrderVC: UIViewController {
     }
     
     
-    
+    fileprivate func setDesi() {
+        
+        self.hideNavigationShadow(viwController: self)
+        Helper.setBackgroundIamgeForNavigation(img: UIImage(named: "header")!, vc: self)
+        
+    }
     
     
     
@@ -105,6 +153,8 @@ extension MyOrderVC:  UITableViewDataSource , UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
+        
+        return 10
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -123,6 +173,7 @@ extension MyOrderVC:  UITableViewDataSource , UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
+        return 132.0
     }
     
     
@@ -154,11 +205,11 @@ extension MyOrderVC: UICollectionViewDelegate , UICollectionViewDataSource , UIC
         
         
         if indexPath.row == 0 {
-            cell.setupCell(text: General.stringForKey(key: ""))
+            cell.setupCell(text: General.stringForKey(key: "Finished"))
         } else if indexPath.row == 1 {
-            cell.setupCell(text: General.stringForKey(key: ""))
+            cell.setupCell(text: General.stringForKey(key: "Current"))
         } else if indexPath.row == 2 {
-            cell.setupCell(text: General.stringForKey(key: ""))
+            cell.setupCell(text: General.stringForKey(key: "New"))
         }
         
       
@@ -183,6 +234,9 @@ extension MyOrderVC: UICollectionViewDelegate , UICollectionViewDataSource , UIC
         
         return 0
     }
+    
+    
+    
     
 }
 

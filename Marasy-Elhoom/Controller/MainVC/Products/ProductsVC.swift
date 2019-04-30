@@ -43,8 +43,8 @@ class ProductsVC: UIViewController {
         confirmTableView()
         
         
- Helper.setBackgroundIamgeForNavigation(img: UIImage(named: "header")!, vc: self)
-        
+        self.hideNavigationShadow(viwController: self)
+        Helper.setBackgroundIamgeForNavigation(img: UIImage(named: "header")!, vc: self)
         
     }
     

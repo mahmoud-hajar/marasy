@@ -39,12 +39,20 @@ class ProfileVC: UIViewController {
         if Helper.checkUserId() == true {
             setUserData()
             self.send.isUserInteractionEnabled = true
+             self.userNameTF.isUserInteractionEnabled = true
+              self.phoneTF.isUserInteractionEnabled = true
+               self.passwordTF.isUserInteractionEnabled = true
         } else {
             self.send.isUserInteractionEnabled = false
+             self.userNameTF.isUserInteractionEnabled = false
+               self.phoneTF.isUserInteractionEnabled = false
+                self.passwordTF.isUserInteractionEnabled = false
+            
         }
 
         
-        
+        setDes()
+        setLoca()
 
     }
     
@@ -103,6 +111,8 @@ class ProfileVC: UIViewController {
         
     Helper.setBackgroundIamgeForNavigation(img: UIImage(named: "header")!, vc: self)
       send.setRaudis(raduis: 12.0)
+        send.setRaudis(raduis: 12.0)
+
     
     }
     

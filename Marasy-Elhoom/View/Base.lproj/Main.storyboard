@@ -416,7 +416,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dyZ-gr-Bg5">
-                                                    <rect key="frame" x="43" y="12" width="87" height="20"/>
+                                                    <rect key="frame" x="43" y="12" width="48" height="20"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -820,7 +820,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="1w2-aU-2Ag">
             <objects>
-                <tabBarController storyboardIdentifier="main" id="40D-mn-1Va" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="main" id="40D-mn-1Va" customClass="TabBarController" customModule="Marasy_Elhoom" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ihb-4a-90G">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -829,7 +829,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="afZ-FX-hTu" kind="relationship" relationship="viewControllers" id="F4x-4l-mGe"/>
-                        <segue destination="WsL-kG-nah" kind="relationship" relationship="viewControllers" id="qpy-20-rTt"/>
+                        <segue destination="WsL-kG-nah" kind="relationship" relationship="viewControllers" id="JwD-gp-T1g"/>
                         <segue destination="xNr-pg-gUs" kind="relationship" relationship="viewControllers" id="7Vl-S4-bET"/>
                         <segue destination="zvn-pB-0dq" kind="relationship" relationship="viewControllers" id="6OE-F7-28O"/>
                         <segue destination="LmY-yM-pXl" kind="relationship" relationship="viewControllers" id="d9m-7b-ugR"/>
@@ -837,7 +837,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f07-Pk-Opz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3428" y="93"/>
+            <point key="canvasLocation" x="3431" y="134"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="zRP-dr-Hh6">
@@ -897,7 +897,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vuv-Ae-ixU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4380" y="158.77061469265368"/>
+            <point key="canvasLocation" x="4404" y="134"/>
         </scene>
         <!--OffersVC-->
         <scene sceneID="cZT-V2-bKO">

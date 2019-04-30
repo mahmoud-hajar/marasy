@@ -24,7 +24,8 @@ class RulesVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-
+        self.hideNavigationShadow(viwController: self)
+        Helper.setBackgroundIamgeForNavigation(img: UIImage(named: "header")!, vc: self)
 
 
     }

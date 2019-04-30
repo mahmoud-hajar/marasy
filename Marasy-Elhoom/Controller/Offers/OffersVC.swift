@@ -31,6 +31,9 @@ class OffersVC: UIViewController {
 
         
         setUpTableView()
+        
+        self.hideNavigationShadow(viwController: self)
+        Helper.setBackgroundIamgeForNavigation(img: UIImage(named: "header")!, vc: self)
 
         if API.isConnectedToInternet() {
             DispatchQueue.main.async {
@@ -70,10 +73,11 @@ class OffersVC: UIViewController {
                 print("offers data is nil")
             }
         }
-        
-        
-        
     }
+    
+    
+    
+    
     
     
 }

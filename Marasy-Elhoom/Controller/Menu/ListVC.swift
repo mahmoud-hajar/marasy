@@ -20,6 +20,15 @@ class ListVC: UIViewController {
     
     configTableView()
         
+        self.hideNavigationShadow(viwController: self)
+        Helper.setBackgroundIamgeForNavigation(img: UIImage(named: "header")!, vc: self)
+        
+        
+        
+        
+        
+        
+        
     }
     
     
@@ -53,7 +62,7 @@ class ListVC: UIViewController {
 }
 extension ListVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return 5
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
