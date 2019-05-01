@@ -118,7 +118,7 @@ class API: NSObject {
                     let name = inr["name"].string
                     let phone = inr["mobile"].string
                     print(id!)
-                     print(name!)
+                    print(name!)
                       print(phone!)
                     Helper.setUserData(name: name!, phone: phone!, password: password)
                     Helper.saveUserId(user_id: id!)
@@ -219,7 +219,25 @@ class API: NSObject {
         }
     }
     
-    
+    /*
+     
+     let para = [
+     "token":String,
+     id:String,
+     
+     
+     
+     
+     
+     ]
+     
+     
+     
+     
+     
+     
+     
+     */
     
     
     

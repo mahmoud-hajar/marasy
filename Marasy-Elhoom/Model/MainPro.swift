@@ -20,18 +20,21 @@ class MainPro: NSObject {
     init?(dic:[String:JSON]) {
     
         
-        let inr = dic["innerData"]!
-       // self.totalPages = (dic["total"]?.int)!
+        self.name = (dic["name"]?.string)!
+        self.image = (dic["image"]?.string)!
         
-         let dat =  inr["data"].array
-        print((dat?.count)!)
-          for ddd in dat! {
-           
-            self.id = ddd["id"].int!
-            self.name = ddd["name"].string!
-            self.image = ddd["image"].string!
-            print(id)
-           }
+//        let inr = dic["innerData"]!
+//       // self.totalPages = (dic["total"]?.int)!
+//
+//         let dat =  inr["data"].array
+//        print((dat?.count)!)
+//          for ddd in dat! {
+//
+//            self.id = ddd["id"].int!
+//            self.name = ddd["name"].string!
+//            self.image = ddd["image"].string!
+//            print(id)
+//           }
          }
     
     

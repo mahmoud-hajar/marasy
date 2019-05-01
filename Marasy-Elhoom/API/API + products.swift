@@ -67,17 +67,19 @@ extension API {
                     let jsonData = JSON(value)
                     print("category data",jsonData)
                     
-                    //                guard let dataArray = jsonData.array else{
-                    //                    completion(nil , nil)
-                    //                    return
-                    //                }
+                    let inr = jsonData["innerData"]
+
+                    guard let da = inr["data"].array else {
+                        completion(nil, nil)
+                        return
+                    }
                     var cate = [MainPro]()
-                    // for dta in dataArray {
-                    if let data = jsonData.dictionary , let res = MainPro.init(dic: data) {
+                     for dta in da {
+                    if let data = dta.dictionary , let res = MainPro.init(dic: data) {
                         cate.append(res)
                         print("good")
                     }
-                    //}
+                    }
                     completion(nil, cate)
                 }
             default:break
@@ -105,19 +107,20 @@ extension API {
                     print(error)
                 case.success(let value):
                     let jsonData = JSON(value)
+                    let inr = jsonData["innerData"]
+                    guard let da = inr["data"].array else {
+                        completion(nil, nil)
+                        return
+                    }
                     print("category data",jsonData)
                     
-                    //                guard let dataArray = jsonData.array else{
-                    //                    completion(nil , nil)
-                    //                    return
-                    //                }
                     var cate = [Product]()
-                    // for dta in dataArray {
-                    if let data = jsonData.dictionary , let res = Product.init(dic: data) {
+                     for dta in da {
+                    if let data = dta.dictionary , let res = Product.init(dic: data) {
                         cate.append(res)
                         print("good")
                     }
-                    //}
+                    }
                     completion(nil, cate)
                 }
             default:break
@@ -138,7 +141,7 @@ extension API {
             switch response.response?.statusCode {
                 
             case 500?:
-                print("category server proble")
+                print("category server problem")
             case 404?:
                 print("category page not found")
             case 200?:
@@ -148,7 +151,7 @@ extension API {
                     print(error)
                 case.success(let value):
                     let jsonData = JSON(value)
-                    print("category data",jsonData)
+                  //  print("category data",jsonData)
                     
                     //                guard let dataArray = jsonData.array else{
                     //                    completion(nil , nil)

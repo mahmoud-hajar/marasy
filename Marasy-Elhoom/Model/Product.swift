@@ -22,19 +22,21 @@ class Product: NSObject {
     
     init?(dic:[String:JSON]) {
         
+        self.name = (dic["name"]?.string)!
+         self.image = (dic["image"]?.string)!
         
-        let inr = dic["innerData"]!
-       // self.totalPages = (dic["total"]?.int)!
-        
-        let dat =  inr["data"].array
-        for ddd in dat! {
-            
-            self.id = ddd["id"].int!
-             self.name = ddd["name"].string!
-              self.image = ddd["image"].string!
-               self.price = ddd["price"].double!
-            
-        }
+//        let inr = dic["innerData"]!
+//       // self.totalPages = (dic["total"]?.int)!
+//
+//        let dat =  inr["data"].array
+//        for ddd in dat! {
+//
+//            self.id = ddd["id"].int!
+//             self.name = ddd["name"].string!
+//              self.image = ddd["image"].string!
+//               self.price = ddd["price"].double!
+//
+//        }
     }
     
     

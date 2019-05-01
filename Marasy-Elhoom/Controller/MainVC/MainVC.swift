@@ -22,6 +22,9 @@ class MainVC: UIViewController {
     var imgSource = [InputSource]()
     var categ = [MainPro]()
     
+    
+    
+    
     var currentPage = 1
      var totalPages = 1
     
@@ -57,9 +60,6 @@ class MainVC: UIViewController {
         
         collectionView.dataSource = self
          collectionView.delegate = self
-        
-        
-        
         
     }
     
@@ -183,10 +183,10 @@ extension MainVC: UICollectionViewDelegate , UICollectionViewDataSource , UIColl
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-            let yourWidth = collectionView.bounds.width/2.0
-            let yourHeight = yourWidth
+            let Width = collectionView.bounds.width/2.0
+            let Hight = Width
             
-            return CGSize(width: yourWidth, height: yourHeight)
+            return CGSize(width: Width, height: Hight)
         
     }
     
